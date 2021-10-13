@@ -1,0 +1,21 @@
+$second-font: 'Ubuntu', sans-serif;
+
+.home {
+    display: flex;
+    background: url("/images/flower.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: $second-font;
+    .width {
+        margin: auto 0 auto 40px;
+    }
+    .home-page .text-1 {
+        font-size: 27px;
+    }
+    .home-page .text-2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+}

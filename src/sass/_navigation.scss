@@ -1,0 +1,50 @@
+$main-font: 'Poppins', sans-serif;
+$second-font: 'Ubuntu', sans-serif;
+
+.width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: $second-font;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    .menu li {
+        list-style: none;
+        display: inline-block;
+        a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 25px;
+            transition: color 0.3s ease;
+        }
+    }
+    .logo a {
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+        span {
+            color: crimson;
+        }
+    }
+    .width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.navbar .menu li a:hover {
+    color: crimson;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background:crimson;
+    .logo a span {
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+}
