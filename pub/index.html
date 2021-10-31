@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="scroll-up" id="scroll-up">
+        <a href="#home"><img src="/images/pil.png" alt=""></a>
+    </div>
+    <!--Header-->
     <header>
+        <!--Navigation-->
         <nav class="navbar" id="navbar">
             <div class="width">
                 <div class="logo"><a href="">Portfo<span>lio.</span></a></div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="item">Hem</a></li>
+                    <li><a href="#studies" class="item">Studier</a></li>
+                    <li><a href="#jobs" class="item">Jobb</a></li>
+                    <li><a href="#sites" class="item">Webbsidor</a></li>
                 </ul>
+                <div class="mobile-nav"></div>
             </div>
         </nav>
     </header>
@@ -27,25 +31,60 @@
         <div class="width">
             <div class="home-page">
                 <div class="text-1">Hej, mitt namn är</div>
-                <div class="text-2">Marcus Nygård</div>
+                <div class="text-2"><h1>Marcus Nygård</h1></div>
+                <div class="text-3">Välkommen till min portfo<span>lio</span></div>
             </div>
         </div>
     </section>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur repellat dolorum aliquid accusamus, sint quaerat quia ipsa delectus assumenda fugiat officiis atque dolorem voluptas itaque praesentium, fuga magnam. Sed asperiores quos, quo illo officia repellat. Veritatis ipsam id, ab eveniet, sint labore perferendis molestiae unde dolor soluta suscipit fugiat atque architecto aperiam quas eligendi possimus consequuntur velit? Expedita, porro numquam. Deleniti nesciunt accusamus laborum dignissimos perspiciatis vitae ex molestias autem adipisci veritatis quo eos, cumque, quaerat enim mollitia eius at magni ipsum sed commodi fugit. Eos fugiat sed quo inventore sunt sequi esse suscipit ex laborum, incidunt vero obcaecati? Deleniti assumenda reiciendis, quisquam omnis atque architecto modi quibusdam suscipit cumque perferendis, ducimus dolorum. Ipsam, saepe accusantium. Vel inventore eius officiis enim, eos velit eum, totam facere aut quaerat excepturi earum molestiae ab officia nemo voluptatem, unde ex voluptatum magnam? Provident quaerat quas doloremque delectus saepe nihil recusandae facere aspernatur in? Laborum neque quo reiciendis velit esse culpa in laudantium illo facilis fugiat, asperiores consequuntur dicta itaque odit minus earum qui quam, magnam nobis nesciunt deleniti facere ratione? Vitae laborum, culpa enim facere exercitationem id dolor possimus sint ad doloremque sapiente, quos iure dolorum corporis maxime doloribus molestias quam sed.</p>
+    <!--Main section-->
     <main>
-        <section class="studies" id="studies">
+        <section class="about">
             <div class="width">
-                
+                <h2>Om mig:</h2>
+                <p>Mitt namn är Marcus. Jag är 27 år gammal och pluggar för tillfället Webbutveckling på Mittuniversitetet.
+                    Jag bor för nuvarande med min sambo och våra tre hundar i Västerås och arbetar halvtid som administratör på ett foto-företag utöver mina studier.
+                    <br><br>
+                    Mina hobbys är fiske, datorspel och film.
+                    <br><br>
+                    Nedan hittar ni information om mina studier, mina arbetserfarentheter och mina olika projekt.
+                </p>
             </div>
         </section>
-        <section class="jobs">
 
+        <section class="studies" id="studies">
+            <div class="width">
+                <h2>Mina studier:</h2>
+                <div class="studies-container" id="studies-container">
+                    <!-- Content from main.js-->
+                </div>
+            </div>
         </section>
-        <section class="sites">
 
+
+        <section class="jobs" id="jobs">
+            <div class="width">
+                <h2>Mina jobb:</h2>
+                <div class="jobs-container" id="jobs-container">
+                    <!-- Content from main.js-->
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sites" id="sites">
+            <div class="width">
+                <h2>Mina hemsidor:</h2>
+                <div class="sites-container" id="sites-container">
+                    <!-- Content from main.js-->
+                </div>
+            </div>
         </section>
     </main>
+
+    <!--Footer-->
+    <footer>
+        <h3>Marcus Nygård 2021.</h3>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

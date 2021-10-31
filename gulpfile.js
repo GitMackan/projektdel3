@@ -56,6 +56,15 @@ function imageTask() {
     .pipe(dest('pub/images'));
 }
 
+//Babel-task
+function babelTask () {
+    return src(files.jsPath)
+      .pipe(babel({
+        presets: ["@babel/preset-env"]
+      }))
+      .pipe(dest("pub/js"));
+  };
+
 //Watch-task, håll koll på ändringar som görs i källkodsfiler och ändra i pub-mappen. Starta även upp browsersync.
 function watchTask() {
 
@@ -66,16 +75,7 @@ function watchTask() {
     watch([files.htmlPath, files.cssPath, files.jsPath, files.imagePath, files.sassPath], parallel(copyHTML, cssTask, sassTask, jsTask, imageTask)).on('change', browserSync.reload);
 }
 
-//Babel-task
-function babelTask () {
-    return src(files.jsPath)
-      .pipe(babel({
-        presets: ["@babel/preset-env"]
-      }))
-      .pipe(dest("pub/js"));
-  };
-
 exports.default = series(
-    parallel(copyHTML, cssTask, jsTask, imageTask, sassTask, babelTask), 
+    parallel(copyHTML, cssTask, jsTask, imageTask, sassTask), 
     watchTask
 );

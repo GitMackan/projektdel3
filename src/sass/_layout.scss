@@ -1,8 +1,57 @@
-$second-font: 'Ubuntu', sans-serif;
+/* Uppåtknapp */ 
+.scroll-up {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+    border-radius: 6px;
+    background: $primary-color;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+.scroll-up.show {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
 
+/* SECTIONS */ 
+
+/* About section */
+.about {
+    font-family: $second-font;
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid $primary-color;
+    border-radius: 15px;
+    min-height: 20vh;
+    margin-top: 3em;
+    display: flex;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    letter-spacing: .02em;
+    font-weight: 300;
+    padding: 1em;
+    h2 {
+        margin-bottom: .5em;
+        text-align: center;
+    }
+}
+
+/* Home section */
 .home {
     display: flex;
-    background: url("/images/flower.jpg") no-repeat center;
+    background: url("/images/cubes.jpg") no-repeat center bottom;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -18,4 +67,73 @@ $second-font: 'Ubuntu', sans-serif;
         font-weight: 600;
         margin-left: -3px;
     }
+    .home-page .text-3 {
+        margin-top: .5em;
+        font-size: 27px;
+        span {
+            color: gold;
+        }
+    }
+}
+
+.studies, .jobs, .sites {
+    padding: 85px 0;
+    font-family: $primary-font;
+    min-height: 20vh;
+    h2 {
+        font-size: 2em;
+        margin-bottom: .5em;
+    }
+}
+.studies-container, .jobs-container, .sites-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+.studie-card h3, .job-card h3, .sites-card h3{
+    margin: 0.3em 0; 
+}
+
+/* Studie section */
+.studies .width {
+    margin: 0 auto;
+}
+.studie-card {
+    background: darken($bright, 2);
+    padding: 3em;
+    border-radius: 15px;
+    border: 3px solid $special-color;
+}
+
+/* Jobs section */
+.jobs {
+    background: $special-color;
+    color: black;
+    h2 {
+        color: $bright;
+    }
+}
+.job-card {
+    background: darken($bright, 2);
+    padding: 3em;
+    border-radius: 15px;
+    border: 3px solid $primary-color;
+}
+
+/* Sites section */ 
+.sites-card {
+    background: darken($bright, 2);
+    padding: 3em;
+    border-radius: 15px;
+    border: 3px solid $special-color;
+}
+
+/* Footer */ 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    font-family: $primary-font;
+    background: $primary-color
 }

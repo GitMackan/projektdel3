@@ -1,5 +1,7 @@
+/*
 $main-font: 'Poppins', sans-serif;
 $second-font: 'Ubuntu', sans-serif;
+*/
 
 .width {
     max-width: 1300px;
@@ -28,7 +30,7 @@ $second-font: 'Ubuntu', sans-serif;
         font-weight: 600;
         color: #fff;
         span {
-            color: crimson;
+            color: gold;
         }
     }
     .width {
@@ -36,15 +38,35 @@ $second-font: 'Ubuntu', sans-serif;
         align-items: center;
         justify-content: space-between;
     }
+    .mobile-nav {
+        background: url("/images/menu2.png") no-repeat center;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        display: none;
+    }
 }
 .navbar .menu li a:hover {
-    color: crimson;
+    color: $primary-color;
+    
 }
 .navbar.sticky {
     padding: 15px 0;
-    background:crimson;
+    background: $primary-color;
     .logo a span {
         color: #fff;
         transition: all 0.3s ease;
     }
+    a {
+        color: $special-color;
+    }
+}
+.navbar.sticky .menu li a {
+    color: black;
+}
+.navbar.sticky .menu.active li a {
+    color:white;
+}
+.navbar.sticky .menu li a:hover {
+    color: white;
 }

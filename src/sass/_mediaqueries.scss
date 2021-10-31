@@ -1,0 +1,97 @@
+// Media queries
+
+// Styling upp till 1301px skärmbredd
+@media screen and (max-width: 1301px) {
+    .home .width {
+        margin-left: 0;
+    }
+    .about {
+        width: 80%;
+        padding: 1em;
+        font-size: 1em;
+    }
+}
+
+// Styling upp till 952px skärmbredd
+@media screen and (max-width: 952px) {
+    /* Sections */
+    .studies-container, .jobs-container, .sites-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Navigation */ 
+    .home .width {
+        padding: 0 50px;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        li {
+            display: block;
+            a {
+                display: inline-block;
+                margin: 20px 0;
+                font-size: 25px;
+            }
+        }
+    }
+    .navbar .mobile-nav {
+        display: block;
+        z-index: 99;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .mobile-nav.active {
+        background: url("/images/close2.png") no-repeat center;
+    }
+    .home .home-page .text-2 {
+        font-size: 60px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+}
+
+// Styling upp till 690px skärmbredd
+@media screen and (max-width: 690px) {
+    .home .home-page .text-1 {
+        font-size: 25px;
+    }
+    .home .home-page .text-2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home-page .text-3 {
+        font-size: 25px;
+    }
+    .home .width {
+        padding: 0 23px;
+    }
+    .width {
+        padding: 0 23px;
+    }
+}
+
+// Styling upp till 500px skärmbredd
+@media screen and (max-width: 500px) {
+    .home .home-page .text-1 {
+        font-size: 23px;
+    }
+    .home .home-page .text-2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home .home-page .text-3 {
+        font-size: 23px;
+    }
+}
