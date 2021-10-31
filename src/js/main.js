@@ -16,7 +16,7 @@ window.addEventListener('load', getSites);
 function getStudies () {
     studiesEl.innerHTML = "";
 
-    fetch('http://localhost/projectapi/studies.php')
+    fetch('https://studenter.miun.se/~many2005/dt173g/projectapi/studies.php')
     .then(response => response.json())
     .then(data => {
         data.forEach(studie => {
@@ -37,7 +37,7 @@ function getStudies () {
 function getJobs () {
     jobsEl.innerHTML = "";
 
-    fetch('http://localhost/projectapi/jobs.php')
+    fetch('https://studenter.miun.se/~many2005/dt173g/projectapi/jobs.php')
     .then(response => response.json())
     .then(data => {
         data.forEach(job => {
@@ -58,7 +58,7 @@ function getJobs () {
 function getSites () {
     jobsEl.innerHTML = "";
 
-    fetch('http://localhost/projectapi/sites.php')
+    fetch('https://studenter.miun.se/~many2005/dt173g/projectapi/sites.php')
     .then(response => response.json())
     .then(data => {
         data.forEach(site => {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
@@ -7,10 +8,6 @@
   scroll-behavior: smooth;
 }
 
-/*
-$main-font: 'Poppins', sans-serif;
-$second-font: 'Ubuntu', sans-serif;
-*/
 .width {
   max-width: 1300px;
   padding: 0 80px;
@@ -84,6 +81,7 @@ $second-font: 'Ubuntu', sans-serif;
   color: white;
 }
 
+/* Uppåtknapp */
 .scroll-up {
   position: fixed;
   height: 50px;
@@ -195,7 +193,6 @@ $second-font: 'Ubuntu', sans-serif;
 
 /* Jobs section */
 .jobs {
-  /*background: url(/images/design.jpg) no-repeat center;*/
   background: #0d1321;
   color: black;
 }
